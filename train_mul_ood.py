@@ -26,7 +26,7 @@ def setup_seed(seed):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Time Series to Graph for Classification')
 
-    parser.add_argument('--data', type=str, default='ArticularyWordRecognition', help='name of data')
+    parser.add_argument('--data', type=str, default='PEMS-SF', help='name of data')
     parser.add_argument('--batch_size', type=int, default=32, help='batch size')
     parser.add_argument('--max_epoch', type=int, default=200, help='max epoch')
     parser.add_argument('--lr', type=float, default=0.003, help='learning rate')
@@ -35,7 +35,7 @@ if __name__ == '__main__':
                         help='the ratio of nodes to choose as neighbors in intra-correlation extraction')
     parser.add_argument('--r2', type=float, default=0.7,
                         help='the ratio of nodes to choose as neighbors in inter-correlation extraction')
-    parser.add_argument('--seg_len', type=int, help='the length of each segment')
+    parser.add_argument('--seg_len', type=int, default=12, help='the length of each segment')
     parser.add_argument('--gpu', type=int, default=0,
                         help='The gpu no. used for training and inference (defaults to 0)')
     parser.add_argument('--d_model1', type=int, default=96,

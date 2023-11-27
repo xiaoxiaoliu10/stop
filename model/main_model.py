@@ -17,8 +17,8 @@ class main_model_ood(nn.Module):
         self.k_hops = k_hops
         self.dim = dim
 
-        self.graph_builder = intra_graph.intra_topk(seg_len, pe_ratio, r1, node_num)
-        self.process_graph = inter_graph.inter_topk(r2, pe_ratio, dim)
+        self.graph_builder = inter_graph.inter_topk(seg_len, pe_ratio, r1, node_num)
+        self.process_graph = intra_graph.intra_topk(r2, pe_ratio, dim)
 
         self.gnn_num_layers = num_layers
         self.time_gnns = nn.ModuleList([])
