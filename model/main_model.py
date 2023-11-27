@@ -96,7 +96,3 @@ class main_model_ood(nn.Module):
             subgraphs.append(g)
 
         return subgraphs
-
-    def acc(self, label, pre):
-        return
-
