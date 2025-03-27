@@ -1,6 +1,6 @@
 # STOP
 This repository contains the implementation for the paper: "Unraveling Spatial-Temporal and Out-of-Distribution Patterns for Multivariate
-Time Series Classification", accepted by WWW 2025 as short paper.
+Time Series Classification", accepted by WWW 2025.
 
 ## Requirements
 The dependencies can be installed by: 
